@@ -12,6 +12,7 @@ const NewExpense = (props) => {
       id: Math.trunc(Math.random() * 100).toString()
     };
     props.onAddExpense(expenseData);
+    setIsEditing(false);
   }
 
   const showExpenseForm = () => {
